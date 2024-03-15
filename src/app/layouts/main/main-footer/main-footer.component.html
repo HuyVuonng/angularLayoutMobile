@@ -1,0 +1,66 @@
+<div class="w-full">
+    <section id="bottom-navigation" class="block border-t-2 border-solid border-primary/20 bg-white shadow">
+        <div id="tabs" class="flex justify-between">
+            <a [routerLink]="['/feature1/handel']" [routerLinkActive]="['!text-primary']"
+                class="w-full flex flex-col items-center hover:opacity-80 transition-opacity text-black justify-center inline-block text-center pt-2 pb-1">
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6 mb-1">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                </svg>
+                <span class="tab tab-explore block text-xs">
+                    'MENU.HOMEPAGE'</span>
+            </a>
+            <a [routerLink]="['/feature2/handel2']" [routerLinkActive]="['!text-primary']"
+                class="w-full hover:opacity-80 transition-opacity text-black flex flex-col items-center justify-center inline-block text-center pt-2 pb-1">
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" class="w-6 h-6 mb-1">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+        </svg> -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" class="w-6 h-6 mb-1">
+                    <g clip-path="url(#clip0_2187_14595)">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M23.1429 2.56656H0.857143C0.383036 2.56656 0 2.94959 0 3.4237V20.5666C0 21.0407 0.383036 21.4237 0.857143 21.4237H23.1429C23.617 21.4237 24 21.0407 24 20.5666V3.4237C24 2.94959 23.617 2.56656 23.1429 2.56656ZM1.92857 4.49513H22.0714V7.70942H1.92857V4.49513ZM22.0714 19.4951H1.92857V10.0666H22.0714V19.4951ZM15.7232 17.7808H20.1429C20.2607 17.7808 20.3571 17.6844 20.3571 17.5666V15.638C20.3571 15.5201 20.2607 15.4237 20.1429 15.4237H15.7232C15.6054 15.4237 15.5089 15.5201 15.5089 15.638V17.5666C15.5089 17.6844 15.6054 17.7808 15.7232 17.7808Z"
+                            fill="black" fill-opacity="0.4" />
+                    </g>
+                </svg>
+                <span class="block text-xs">'MENU.HOME'</span>
+            </a>
+            <a [routerLink]="['/user/phonebook']" [routerLinkActive]="['text-primary']"
+                class="w-full flex flex-col items-center hover:opacity-80 transition-opacity text-black justify-center inline-block text-center pt-2 pb-1">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6 mb-1">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
+                </svg>
+                <span class="tab tab-kategori block text-xs">'MENU.CONTACT'</span>
+            </a>
+
+            <a [routerLink]="['/noti']" [routerLinkActive]="['text-primary']"
+                class="footerNoti w-full flex flex-col relative items-center hover:opacity-80 transition-opacity text-black justify-center inline-block text-center pt-2 pb-1">
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    stroke="currentColor" class="w-6 h-6 mb-1">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21.0589 18.8539H20.416V9.74677C20.416 5.96731 17.6223 2.8441 13.9874 2.32445V1.28249C13.9874 0.690524 13.508 0.21106 12.916 0.21106C12.3241 0.21106 11.8446 0.690524 11.8446 1.28249V2.32445C8.20977 2.8441 5.41602 5.96731 5.41602 9.74677V18.8539H4.77316C4.29905 18.8539 3.91602 19.237 3.91602 19.7111V20.5682C3.91602 20.6861 4.01244 20.7825 4.1303 20.7825H9.91602C9.91602 22.4378 11.2607 23.7825 12.916 23.7825C14.5714 23.7825 15.916 22.4378 15.916 20.7825H21.7017C21.8196 20.7825 21.916 20.6861 21.916 20.5682V19.7111C21.916 19.237 21.533 18.8539 21.0589 18.8539ZM12.916 22.0682C12.2062 22.0682 11.6303 21.4923 11.6303 20.7825H14.2017C14.2017 21.4923 13.6258 22.0682 12.916 22.0682ZM7.34459 18.8539V9.74677C7.34459 8.25749 7.92316 6.85927 8.97584 5.8066C10.0285 4.75392 11.4267 4.17535 12.916 4.17535C14.4053 4.17535 15.8035 4.75392 16.8562 5.8066C17.9089 6.85927 18.4874 8.25749 18.4874 9.74677V18.8539H7.34459Z" />
+                </svg>
+
+                <div
+                    class="flex items-center justify-center bg-red-500 rounded-full text-white h-[20px] min-w-[20px] text-xs absolute right-[23px] top-[5px]">
+
+                </div>
+
+                <span class="tab tab-account block text-xs">'MENU.NOTI'</span>
+            </a>
+            <a [routerLink]="['/user/config']" [routerLinkActive]="['text-primary']"
+                class="footerUserInfor w-full flex flex-col items-center hover:opacity-80 transition-opacity text-black justify-center inline-block text-center pt-2 pb-1">
+                <img alt="" class="w-[1.5rem] scale-125 h-[1.5rem] mb-1 object-cover rounded-full" />
+                <i class="fa-regular fa-user text-[22px] mb-[4px]"></i>
+                <span class="tab tab-account block text-xs">
+                    'MENU.ACCOUNT'</span>
+            </a>
+        </div>
+    </section>
+</div>

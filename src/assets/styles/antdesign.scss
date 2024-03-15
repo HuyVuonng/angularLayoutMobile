@@ -1,0 +1,36 @@
+.ant-layout-footer {
+  padding: 0px !important;
+}
+
+.ant-checkbox-inner {
+  border-radius: 0px !important;
+}
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background-color: #42a4f5 !important;
+  color: white;
+  :hover {
+    color: white;
+  }
+}
+//.ant-menu:not(.ant-menu-horizontal) .ant-menu-item {
+//  border-top-left-radius: 30px;
+//  border-bottom-left-radius: 30px;
+//}
+
+.ant-menu-inline .ant-menu-selected::after,
+.ant-menu-inline .ant-menu-item-selected::after {
+  display: none !important;
+}
+
+// .ant-menu-inline.ant-menu-root .ant-menu-item,
+// .ant-menu-inline.ant-menu-root .ant-menu-submenu-title {
+//   margin-left: 35px !important;
+//   width: 165px !important;
+// }
+.ant-breadcrumb > nz-breadcrumb-item:last-child {
+  color: #42a4f5;
+}
+.ant-breadcrumb-separator > span {
+  transform: translateY(-20%);
+}

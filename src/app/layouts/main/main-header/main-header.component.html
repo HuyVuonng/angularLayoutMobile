@@ -1,0 +1,29 @@
+<div
+    class="w-full bg-slate-400 border-b-2 border-solid border-primary2/50 h-12 p-2 flex items-center justify-between header-color ">
+    <div [routerLink]="['/','user', 'utilities']" class="cursor-pointer">
+        <img class="h-6 pl-6 scale-[160%]" src="/assets/images/true_logo.png" alt="" />
+        <!-- <img *ngIf="configData.logo !== null && configData.logo !== '' && configData.logo !== 'string' "
+            class="h-6 pl-6 scale-[160%]" [src]="configData.logo" alt="" /> -->
+    </div>
+
+    <div class="flex items-center space-x-2">
+        <!-- <ng-container *ngIf="authState$ | async; else notLoggedInTmpl">
+        </ng-container> -->
+    </div>
+</div>
+
+<ng-template #notLoggedInTmpl>
+    <button nz-button class="flex items-center justify-center" nzType="primary">
+        <span>AUTH.LOGIN</span>
+    </button>
+</ng-template>
+<!-- <ng-template #countryLogo let-logo>
+    <img *ngIf="logo === 'vi'" class="h-4" src="/assets/images/vietnam.png" alt="" />
+    <img *ngIf="logo === 'en'" class="h-4" src="/assets/images/uk.png" alt="" />
+</ng-template> -->
+<!-- <ng-template #customSelectItem let-selected>
+    <div class="flex items-center space-x-2">
+        <ng-container *ngTemplateOutlet="countryLogo; context: { $implicit: selected.nzValue }"></ng-container><span>{{
+            selected.nzValue.toUpperCase() }}</span>
+    </div>
+</ng-template> -->
